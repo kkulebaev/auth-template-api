@@ -18,6 +18,7 @@ func main() {
 	router.Use(cors.Default())
 	router.POST("/login", service.LogIn)
 	router.GET("/ping", service.Ping)
+	router.GET("/users", service.GetUsers)
 
 	port := os.Getenv("PORT")
 	if port == "" {
