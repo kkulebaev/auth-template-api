@@ -7,31 +7,31 @@ import (
 )
 
 type User struct {
-	id       int
-	username string
-	password string
+	ID       int    `json:"id"`
+	Username string `json:"username"`
+	Password string `json:"password"`
 }
 
 var users = []User{
 	{
-		id:       1,
-		username: "Lorem",
-		password: "Ipsum",
+		ID:       1,
+		Username: "Lorem",
+		Password: "Ipsum",
 	},
 	{
-		id:       2,
-		username: "Lorem2",
-		password: "Ipsum2",
+		ID:       2,
+		Username: "Lorem2",
+		Password: "Ipsum2",
 	},
 	{
-		id:       3,
-		username: "Lorem3",
-		password: "Ipsum3",
+		ID:       3,
+		Username: "Lorem3",
+		Password: "Ipsum3",
 	},
 	{
-		id:       4,
-		username: "Lorem4",
-		password: "Ipsum4",
+		ID:       4,
+		Username: "Lorem4",
+		Password: "Ipsum4",
 	},
 }
 
